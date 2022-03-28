@@ -7,9 +7,9 @@ I developed a full wireless comunication system for to R&D Challenge from Tracti
 The main objective of this project is send a 500 kB file from a 100 m open-air gap, using at least one battery powered device.
 So to reach that goal I choose to use the Bluetooth LE protocol because it has a low power consumption and great range, also because it is suitable to the new versions of it and different hardwares plataforms.
 
-The hardware that I choose was the ESP32-Pico-D4,which has a solid environment,numerous features with low cost and  which makes this the perfect tool for many of your IoT projects and experiments.
+The hardware that I choose was the ESP32-Pico-D4,which has a solid environment,numerous features with low cost and  which makes this the perfect tool for many of IoT projects and experiments.
 
-The pcb I made it simple but efficient with the SoC with 4Mb flash built-in and a battery case of CR123A,also I inserted a crystal of 32kHz in esp32 to support the Bluetooth Modem low power clock which make a system has an average current about 2-3mA. That model of battery has an estimated ~1500mAh and a small size.I didn't put in the project any leds or other peripherals because the focus was to reach the main goal to send messages and be realiabe in battery.
+The pcb I made it simple but efficient with the SoC with 4Mb flash built-in and a battery case of CR123A,also I inserted a crystal of 32kHz in esp32 to support the Bluetooth Modem low power clock which make a system has an average current about 2-3mA. That model of battery has an estimated ~1500mAh and a small size.I used the MAX40200 wich is an ideal diode which has lower dropout voltage <40mV to keep the power supply safe.I didn't put in the project any leds or other peripherals because the focus was to reach the main goal to send messages and be realiabe in battery.
 
 ![3D_PCB.png](https://github.com/ArturG16/Tractian-Challenge-Radio/blob/main/PCB/3D_PCB.png)
 
