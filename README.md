@@ -11,6 +11,7 @@ The hardware that I choose was the ESP32-Pico-D4,which has a solid environment,n
 
 The pcb I made it simple but efficient with the SoC with 4Mb flash built-in and a battery case of CR123A,also I inserted a crystal of 32kHz in esp32 to support the Bluetooth Modem low power clock which make a system has an average current about 2-3mA. That model of battery has an estimated ~1500mAh and a small size.I didn't put in the project any leds or other peripherals because the focus was to reach the main goal to send messages and be realiabe in battery.
 
+![3D_PCB.png](https://github.com/ArturG16/Tractian-Challenge-Radio/blob/main/PCB/3D_PCB.png)
 
 The firmware I used an example from the manufacturer framework ( ESP - IDF ) which gave me the base to develop a efficient code.
 That example used was the GATT Server, which is ideal to use on sensor's projects. Also that framework has the capability to use FreeRToS which brings to the project a great realiable and provides methods for multiple threads or tasks, mutexes, semaphores and software timers. A tickless mode is provided for low power applications.And also it has greater modularity and less module interdependencies facilitates code reuse across projects. 
